@@ -1,0 +1,249 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Loaded.";
+    Text = "Loaded Commands Successfuly"; 
+    Duration = 5; --math.huge makes it last forever
+    })
+
+-- GUI INSETS
+-- made by qs#0666
+
+-- Instances:
+
+local quiAdminCommands = Instance.new("ScreenGui")
+local quiCommands = Instance.new("Frame")
+local ContainmentFrame = Instance.new("Frame")
+local CommandList = Instance.new("ScrollingFrame")
+local suitcase = Instance.new("TextLabel")
+local prefix = Instance.new("TextLabel")
+local flippedsuitcase = Instance.new("TextLabel")
+local backpack = Instance.new("TextLabel")
+local demesh = Instance.new("TextLabel")
+local equipall = Instance.new("TextLabel")
+local rjdupe = Instance.new("TextLabel")
+local rejoin = Instance.new("TextLabel")
+local serverhop = Instance.new("TextLabel")
+local radioanim = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local ExitButton = Instance.new("TextButton")
+local UiCornerIGNORE = Instance.new("UICorner")
+
+--Properties:
+
+quiAdminCommands.Name = "quiAdminCommands"
+quiAdminCommands.Parent = game.CoreGui
+quiAdminCommands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+quiAdminCommands.ResetOnSpawn = false
+
+quiCommands.Name = "quiCommands"
+quiCommands.Parent = quiAdminCommands
+quiCommands.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+quiCommands.BorderColor3 = Color3.fromRGB(27, 42, 53)
+quiCommands.BorderSizePixel = 0
+quiCommands.Position = UDim2.new(0.17944786, 0, 0.179034159, 0)
+quiCommands.Size = UDim2.new(0, 197, 0, 310)
+
+ContainmentFrame.Name = "ContainmentFrame"
+ContainmentFrame.Parent = quiCommands
+ContainmentFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ContainmentFrame.BorderSizePixel = 0
+ContainmentFrame.Position = UDim2.new(0.0507614203, 0, 0.0612903237, 0)
+ContainmentFrame.Size = UDim2.new(0, 176, 0, 282)
+
+CommandList.Name = "CommandList"
+CommandList.Parent = ContainmentFrame
+CommandList.Active = true
+CommandList.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+CommandList.BorderSizePixel = 0
+CommandList.Size = UDim2.new(0, 176, 0, 282)
+CommandList.ScrollBarThickness = 6
+
+suitcase.Name = "suitcase"
+suitcase.Parent = CommandList
+suitcase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+suitcase.BackgroundTransparency = 1.000
+suitcase.Position = UDim2.new(0.11931818, 0, 0.0514184386, 0)
+suitcase.Size = UDim2.new(0, 133, 0, 14)
+suitcase.Font = Enum.Font.SourceSans
+suitcase.Text = "suitcase"
+suitcase.TextColor3 = Color3.fromRGB(59, 59, 59)
+suitcase.TextSize = 18.000
+suitcase.TextWrapped = true
+
+prefix.Name = "prefix"
+prefix.Parent = CommandList
+prefix.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prefix.BackgroundTransparency = 1.000
+prefix.Position = UDim2.new(0.11931818, 0, 0.0159574468, 0)
+prefix.Size = UDim2.new(0, 133, 0, 14)
+prefix.Font = Enum.Font.SourceSans
+prefix.Text = "prefix"
+prefix.TextColor3 = Color3.fromRGB(59, 59, 59)
+prefix.TextSize = 18.000
+prefix.TextWrapped = true
+
+flippedsuitcase.Name = "flippedsuitcase"
+flippedsuitcase.Parent = CommandList
+flippedsuitcase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+flippedsuitcase.BackgroundTransparency = 1.000
+flippedsuitcase.Position = UDim2.new(0.11931818, 0, 0.0868794322, 0)
+flippedsuitcase.Size = UDim2.new(0, 133, 0, 14)
+flippedsuitcase.Font = Enum.Font.SourceSans
+flippedsuitcase.Text = "flippedsuitcase"
+flippedsuitcase.TextColor3 = Color3.fromRGB(59, 59, 59)
+flippedsuitcase.TextSize = 18.000
+flippedsuitcase.TextWrapped = true
+
+backpack.Name = "backpack"
+backpack.Parent = CommandList
+backpack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+backpack.BackgroundTransparency = 1.000
+backpack.Position = UDim2.new(0.11931818, 0, 0.122340426, 0)
+backpack.Size = UDim2.new(0, 133, 0, 14)
+backpack.Font = Enum.Font.SourceSans
+backpack.Text = "backpack"
+backpack.TextColor3 = Color3.fromRGB(59, 59, 59)
+backpack.TextSize = 18.000
+backpack.TextWrapped = true
+
+demesh.Name = "demesh"
+demesh.Parent = CommandList
+demesh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+demesh.BackgroundTransparency = 1.000
+demesh.Position = UDim2.new(0.11931818, 0, 0.157801419, 0)
+demesh.Size = UDim2.new(0, 133, 0, 14)
+demesh.Font = Enum.Font.SourceSans
+
+demesh.Text = "demesh"
+demesh.TextColor3 = Color3.fromRGB(59, 59, 59)
+demesh.TextSize = 18.000
+demesh.TextWrapped = true
+
+equipall.Name = "equipall"
+equipall.Parent = CommandList
+equipall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+equipall.BackgroundTransparency = 1.000
+equipall.Position = UDim2.new(0.11931818, 0, 0.193262413, 0)
+equipall.Size = UDim2.new(0, 133, 0, 14)
+equipall.Font = Enum.Font.SourceSans
+equipall.Text = "equipall"
+equipall.TextColor3 = Color3.fromRGB(59, 59, 59)
+equipall.TextSize = 18.000
+equipall.TextWrapped = true
+
+rjdupe.Name = "rjdupe"
+rjdupe.Parent = CommandList
+rjdupe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rjdupe.BackgroundTransparency = 1.000
+rjdupe.Position = UDim2.new(0.11931818, 0, 0.228723407, 0)
+rjdupe.Size = UDim2.new(0, 133, 0, 14)
+rjdupe.Font = Enum.Font.SourceSans
+rjdupe.Text = "rjdupe"
+rjdupe.TextColor3 = Color3.fromRGB(59, 59, 59)
+rjdupe.TextSize = 18.000
+rjdupe.TextWrapped = true
+
+rejoin.Name = "rejoin"
+rejoin.Parent = CommandList
+rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rejoin.BackgroundTransparency = 1.000
+rejoin.Position = UDim2.new(0.11931818, 0, 0.264184415, 0)
+rejoin.Size = UDim2.new(0, 133, 0, 14)
+rejoin.Font = Enum.Font.SourceSans
+rejoin.Text = "rejoin"
+rejoin.TextColor3 = Color3.fromRGB(59, 59, 59)
+rejoin.TextSize = 18.000
+rejoin.TextWrapped = true
+
+serverhop.Name = "serverhop"
+serverhop.Parent = CommandList
+serverhop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+serverhop.BackgroundTransparency = 1.000
+serverhop.Position = UDim2.new(0.11931818, 0, 0.299645394, 0)
+serverhop.Size = UDim2.new(0, 133, 0, 14)
+serverhop.Font = Enum.Font.SourceSans
+serverhop.Text = "serverhop"
+serverhop.TextColor3 = Color3.fromRGB(59, 59, 59)
+serverhop.TextSize = 18.000
+serverhop.TextWrapped = true
+
+radioanim.Name = "radioanim"
+radioanim.Parent = CommandList
+radioanim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+radioanim.BackgroundTransparency = 1.000
+radioanim.Position = UDim2.new(0.11931818, 0, 0.335106373, 0)
+radioanim.Size = UDim2.new(0, 133, 0, 14)
+radioanim.Font = Enum.Font.SourceSans
+radioanim.Text = "radioanim"
+radioanim.TextColor3 = Color3.fromRGB(59, 59, 59)
+radioanim.TextSize = 18.000
+radioanim.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = quiCommands
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.274111688, 0, 0, 0)
+Title.Size = UDim2.new(0, 89, 0, 19)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "Commands"
+Title.TextColor3 = Color3.fromRGB(59, 59, 59)
+Title.TextSize = 14.000
+
+ExitButton.Name = "ExitButton"
+ExitButton.Parent = quiCommands
+ExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.BackgroundTransparency = 1.000
+ExitButton.Position = UDim2.new(0.898477197, 0, 0, 0)
+ExitButton.Size = UDim2.new(0, 20, 0, 19)
+ExitButton.Font = Enum.Font.GothamBlack
+ExitButton.Text = "x"
+ExitButton.TextColor3 = Color3.fromRGB(59, 59, 59)
+ExitButton.TextSize = 14.000
+
+ExitButton.MouseButton1Down:connect(function()
+	quiCommands.Visible = false
+end)
+
+UiCornerIGNORE.Name = "UiCornerIGNORE"
+UiCornerIGNORE.Parent = quiCommands
+
+-- Scripts:
+
+local function NHSSZ_fake_script() -- quiCommands.DraggableScript 
+	local script = Instance.new('LocalScript', quiCommands)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local starPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(starPos.X.Scale, starPos.X.Offset + delta.X, starPos.Y.Scale, starPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			starPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(NHSSZ_fake_script)()
