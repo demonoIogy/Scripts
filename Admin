@@ -228,7 +228,7 @@ end
 end)
 
 game.Players.LocalPlayer.Chatted:connect(function(msg)
-if msg:sub(1, 6) == _G.prefix.."goto " then
+if msg:sub(1, 6) == _G.prefix.."to " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
     if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
