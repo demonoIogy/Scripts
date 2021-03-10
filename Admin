@@ -1,39 +1,33 @@
---Name
+--Name 
 print[[ 
 
-   ___  _   _ ___    ___    __  ____  __ _    _  _   
-  / _ \| | | |_ _|  ( _ )   \ \/ /  \/  | |  | || |  
- | | | | | | || |   / _ \/\  \  /| |\/| | |  | || |_ 
- | |_| | |_| || |  | (_>  <  /  \| |  | | |__|__   _|
-  \__\_\\___/|___|  \___/\/ /_/\_\_|  |_|_____| |_|  
+                                                                                                       
+                                                                                                       
+    ____                        
+    ,----.                   ,--,                             ,---,        ,'  , `.  ,--,                
+   /   /  \-.         ,--, ,--.'|                           ,---.'|     ,-+-,.' _ |,--.'|         ,---,  
+  |   :    :|       ,'_ /| |  |,                            |   | :  ,-+-. ;   , |||  |,      ,-+-. /  | 
+  |   | .\  .  .--. |  | : `--'_               ,--.--.      |   | | ,--.'|'   |  ||`--'_     ,--.'|'   | 
+  .   ; |:  |,'_ /| :  . | ,' ,'|             /       \   ,--.__| ||   |  ,', |  |,,' ,'|   |   |  ,"' | 
+  '   .  \  ||  ' | |  . . '  | |            .--.  .-. | /   ,'   ||   | /  | |--' '  | |   |   | /  | | 
+   \   `.   ||  | ' |  | | |  | :             \__\/: . ..   '  /  ||   : |  | ,    |  | :   |   | |  | | 
+    `--'""| |:  | : ;  ; | '  : |__           ," .--.; |'   ; |:  ||   : |  |/     '  : |__ |   | |  |/  
+      |   | |'  :  `--'   \|  | '.'|         /  /  ,.  ||   | '/  '|   | |`-'      |  | '.'||   | |--'   
+      |   | ::  ,      .-./;  :    ;        ;  :   .'   \   :    :||   ;/          ;  :    ;|   |/       
+      `---'.| `--`----'    |  ,   /         |  ,     .-./\   \  /  '---'           |  ,   / '---'        
+        `---`               ---`-'           `--`---'     `----'                    ---`-'               
+                                                                                                         
                                                      
                                                              
-                                                              ]]
+                                                              --]]
 
 --Commands
-print[[
-
-COMMANDS: (this is a temp list, we'll add a gui later-on)
-
-suitcase 
-
-flippedsuitcase
-
-backpack
-
-demesh
-
-equipall
-
-rjdupe
-
-rejoin
-
-serverhop
-
-radioanim
-
-]]
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+    if cmd:match(_G.prefix.."cmds") then
+-- Goto the github QuiCommandsGui to update the gui
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/QuiCommandsGui"), true))() 
+    end
+end
 
 --Prefix
 _G.prefix = "/"--change 4 new prefix
@@ -50,8 +44,8 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 end
 
 if notifsEnabled then
-    notify("WELCOME",player.Name,5)
-    notify("Prefix:",_G.prefix.."",5)
+    notify("[QUI Admin User]",player.Name,5)
+    notify("Default Prefix:",_G.prefix.."",5)
 end
 
 --Credit
