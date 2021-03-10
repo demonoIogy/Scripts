@@ -27,7 +27,7 @@ game.Players.LocalPlayer.Chatted:connect(function(cmd)
 -- Goto the github QuiCommandsGui to update the gui
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/QuiCommandsGui"), true))() 
     end
-end
+end)
 
 --Prefix
 _G.prefix = "/"--change 4 new prefix
