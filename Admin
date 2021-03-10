@@ -57,7 +57,7 @@ end
 --Credit
 game.StarterGui:SetCore("SendNotification", {
 Title = "CREDIT";
-Text = "xml5#5555 / xml4#4444"; 
+Text = "qs#0666 / xml4#4444"; 
 Duration = 5; --math.huge makes it last forever
 })
 
