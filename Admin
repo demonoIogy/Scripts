@@ -19,7 +19,7 @@ print[[
                                                                                                          
                                                      
                                                              
-                                                              --]]
+                                                              ]]
 
 --Commands
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
