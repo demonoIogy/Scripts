@@ -1,11 +1,5 @@
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Loaded.";
-    Text = "Loaded Commands Successfuly"; 
-    Duration = 5; --math.huge makes it last forever
-    })
-
--- GUI INSETS
--- made by qs#0666
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -23,6 +17,8 @@ local rjdupe = Instance.new("TextLabel")
 local rejoin = Instance.new("TextLabel")
 local serverhop = Instance.new("TextLabel")
 local radioanim = Instance.new("TextLabel")
+local gotoplr = Instance.new("TextLabel")
+local wsnum = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local ExitButton = Instance.new("TextButton")
 local UiCornerIGNORE = Instance.new("UICorner")
@@ -112,7 +108,6 @@ demesh.BackgroundTransparency = 1.000
 demesh.Position = UDim2.new(0.11931818, 0, 0.157801419, 0)
 demesh.Size = UDim2.new(0, 133, 0, 14)
 demesh.Font = Enum.Font.SourceSans
-
 demesh.Text = "demesh"
 demesh.TextColor3 = Color3.fromRGB(59, 59, 59)
 demesh.TextSize = 18.000
@@ -178,6 +173,30 @@ radioanim.TextColor3 = Color3.fromRGB(59, 59, 59)
 radioanim.TextSize = 18.000
 radioanim.TextWrapped = true
 
+gotoplr.Name = "goto [plr]"
+gotoplr.Parent = CommandList
+gotoplr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gotoplr.BackgroundTransparency = 1.000
+gotoplr.Position = UDim2.new(0.11931818, 0, 0.370567381, 0)
+gotoplr.Size = UDim2.new(0, 133, 0, 14)
+gotoplr.Font = Enum.Font.SourceSans
+gotoplr.Text = "goto [plr]"
+gotoplr.TextColor3 = Color3.fromRGB(59, 59, 59)
+gotoplr.TextSize = 18.000
+gotoplr.TextWrapped = true
+
+wsnum.Name = "ws [num]"
+wsnum.Parent = CommandList
+wsnum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wsnum.BackgroundTransparency = 1.000
+wsnum.Position = UDim2.new(0.11931818, 0, 0.40602839, 0)
+wsnum.Size = UDim2.new(0, 133, 0, 14)
+wsnum.Font = Enum.Font.SourceSans
+wsnum.Text = "ws [num]"
+wsnum.TextColor3 = Color3.fromRGB(59, 59, 59)
+wsnum.TextSize = 18.000
+wsnum.TextWrapped = true
+
 Title.Name = "Title"
 Title.Parent = quiCommands
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -200,8 +219,8 @@ ExitButton.Text = "x"
 ExitButton.TextColor3 = Color3.fromRGB(59, 59, 59)
 ExitButton.TextSize = 14.000
 
-ExitButton.MouseButton1Down:connect(function()
-	quiCommands.Visible = false
+ExitButton.MouseButton1Down:connect(function() 
+	quiCommands.Visible = false 
 end)
 
 UiCornerIGNORE.Name = "UiCornerIGNORE"
@@ -209,7 +228,7 @@ UiCornerIGNORE.Parent = quiCommands
 
 -- Scripts:
 
-local function NHSSZ_fake_script() -- quiCommands.DraggableScript 
+local function VYNNJ_fake_script() -- quiCommands.DraggableScript 
 	local script = Instance.new('LocalScript', quiCommands)
 
 	local UIS = game:GetService('UserInputService')
@@ -246,4 +265,4 @@ local function NHSSZ_fake_script() -- quiCommands.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(NHSSZ_fake_script)()
+coroutine.wrap(VYNNJ_fake_script)()
