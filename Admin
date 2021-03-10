@@ -228,7 +228,7 @@ end
 end)
 
 game.Players.LocalPlayer.Chatted:connect(function(msg)
-if msg:sub(1, 6) == _G.prefix.."to " then
+if msg:sub(1, 6) == _G.prefix.."goto " then
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
     if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
@@ -236,5 +236,17 @@ if msg:sub(1, 6) == _G.prefix.."to " then
     end
     end
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
+end
+end)
+
+--Walkspeed script
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local hum = char:WaitForChild("Humanoid")
+local prefix = _G.prefix
+plr.Chatted:Connect(function(msg)
+if msg:sub(1,4) == prefix.."ws " then
+local amount = msg:sub(5)
+hum.WalkSpeed = amount
 end
 end)
