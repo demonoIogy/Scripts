@@ -21,10 +21,10 @@ print[[
                                                              
                                                               ]]
 
---Commands
+--Commands | to make the exitbutton work: ExitButton.MouseButton1Down:connect(function() quiCommands.Visible = false end)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
     if cmd:match(_G.prefix.."cmds") then
--- Goto the github QuiCommandsGui to update the gui
+-- Goto the github QuiCommandsGui to update the gui | Also make parent quiAdminCommands.Parent = game.CoreGui
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/QuiCommandsGui"), true))() 
     end
 end)
@@ -224,5 +224,17 @@ for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 end
 end
 end
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(msg)
+if msg:sub(1, 6) == _G.prefix.."goto " then
+    local player
+    for i, plr in ipairs(game.Players:GetPlayers()) do
+    if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
+        player = plr.Name
+    end
+    end
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[player].HumanoidRootPart.CFrame
 end
 end)
