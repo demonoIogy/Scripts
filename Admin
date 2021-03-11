@@ -97,7 +97,7 @@ end
 end)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."demesh") then
-    notify("Demesh","Removed Tool Mesh.",5)
+    notify("Demesh","Removed Tool Mesh",5)
 for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
         if v:IsA("Tool") then
             for _,x in pairs(v:GetDescendants()) do
@@ -112,7 +112,7 @@ end)
 
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."equipall") then
-    notify("Equip All","Equiped All Tools.",5)
+    notify("Equip All","Equiped All Tools",5)
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
    v.Parent = game:GetService("Players").LocalPlayer.Character
    
@@ -126,8 +126,8 @@ Wait_Time = 5
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."rjdupe") then
     
-notify("RJ Dupe","Please Wait 5 Seconds.",10)
-notify("Important","This Command Only Does 5 At A Time. Will Update Out Of Beta.",10)
+notify("RJ Dupe","Please Wait 5 Seconds",10)
+notify("Important","This Command Only Does 5 At A Time. Will Update Out Of Beta",10)
 
 wait(Wait_Time)
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/repurges/RBX-Scripts/main/RejoinDupe"), true))()
@@ -137,7 +137,7 @@ end)
 
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."rejoin") then
-    notify("Rejoin","Rejoining.",5)
+    notify("Rejoin","Rejoining",5)
     wait(0.5)
     local ts = game:GetService("TeleportService")
 local p = game:GetService("Players").LocalPlayer
@@ -149,7 +149,7 @@ end)
 
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."serverhop") then
-    notify("Serverhop","Searching For Servers.",10)
+    notify("Serverhop","Searching For Servers",10)
     wait(0.5)
     local x = {}
     for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
@@ -168,7 +168,7 @@ end)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."radioanim") then
 
-notify("Radio Anim","Removed Radio Animation.",5)
+notify("Radio Anim","Removed Radio Animation",5)
 
  wait()
                 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
@@ -189,7 +189,7 @@ end)
 
 game.Players.LocalPlayer.Chatted:connect(function(msg)
 if msg:sub(1, 6) == _G.prefix.."goto " then
-    notify("Goto","Teleport Success.",5)
+    notify("Goto","Teleport Success",5)
     local player
     for i, plr in ipairs(game.Players:GetPlayers()) do
     if string.lower(plr.Name):sub(1, string.len(msg:sub(7))) == string.lower(msg:sub(7)) then
@@ -238,7 +238,7 @@ if boombox ~= nil then
 else
 game.StarterGui:SetCore("SendNotification", {
 Title = "READ";
-Text = "Couldn't Find Radio.";
+Text = "Couldn't Find Radio";
 Duration = 5; --math.huge makes it last forever
 Button1 = "OK"
 })
