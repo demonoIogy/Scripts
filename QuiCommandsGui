@@ -20,6 +20,7 @@ local radioanim = Instance.new("TextLabel")
 local gotoplr = Instance.new("TextLabel")
 local wsnum = Instance.new("TextLabel")
 local jpnum = Instance.new("TextLabel")
+local plauid = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local ExitButton = Instance.new("TextButton")
 local UiCornerIGNORE = Instance.new("UICorner")
@@ -36,7 +37,7 @@ quiCommands.Parent = quiAdminCommands
 quiCommands.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 quiCommands.BorderColor3 = Color3.fromRGB(27, 42, 53)
 quiCommands.BorderSizePixel = 0
-quiCommands.Position = UDim2.new(0.17944786, 0, 0.179034159, 0)
+quiCommands.Position = UDim2.new(0.0644171834, 0, 0.605418146, 0)
 quiCommands.Size = UDim2.new(0, 197, 0, 310)
 
 ContainmentFrame.Name = "ContainmentFrame"
@@ -210,6 +211,18 @@ jpnum.TextColor3 = Color3.fromRGB(59, 59, 59)
 jpnum.TextSize = 18.000
 jpnum.TextWrapped = true
 
+plauid.Name = "plau [id]"
+plauid.Parent = CommandList
+plauid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+plauid.BackgroundTransparency = 1.000
+plauid.Position = UDim2.new(0.11931818, 0, 0.478723407, 0)
+plauid.Size = UDim2.new(0, 133, 0, 14)
+plauid.Font = Enum.Font.SourceSans
+plauid.Text = "play [id]"
+plauid.TextColor3 = Color3.fromRGB(59, 59, 59)
+plauid.TextSize = 18.000
+plauid.TextWrapped = true
+
 Title.Name = "Title"
 Title.Parent = quiCommands
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -241,7 +254,7 @@ UiCornerIGNORE.Parent = quiCommands
 
 -- Scripts:
 
-local function QSJBW_fake_script() -- quiCommands.DraggableScript 
+local function XZNAF_fake_script() -- quiCommands.DraggableScript 
 	local script = Instance.new('LocalScript', quiCommands)
 
 	local UIS = game:GetService('UserInputService')
@@ -278,4 +291,4 @@ local function QSJBW_fake_script() -- quiCommands.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(QSJBW_fake_script)()
+coroutine.wrap(XZNAF_fake_script)()
