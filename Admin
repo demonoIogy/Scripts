@@ -250,3 +250,15 @@ local amount = msg:sub(5)
 hum.WalkSpeed = amount
 end
 end)
+
+--Jumppower script
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local hum = char:WaitForChild("Humanoid")
+local prefix = _G.prefix
+plr.Chatted:Connect(function(msg)
+if msg:sub(1,4) == _G.prefix.."jp " then
+local amount = msg:sub(5)
+hum.JumpPower = amount
+end
+end)
