@@ -231,7 +231,7 @@ local prefix = _G.prefix
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
         local msg = msg:lower()
         if msg:sub(1, 6) == _G.prefix.."play " then
-            notify("Play","Playing Selected Audio.                       [NO ANTILOG]",10)
+            notify("Play","Playing Selected Audio                        [NO ANTILOG]",10)
 local boombox = char:FindFirstChildOfClass("Tool")
 if boombox ~= nil then 
  boombox.Remote:FireServer("PlaySong", msg:sub(7))
