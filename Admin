@@ -332,7 +332,7 @@ plr.Chatted:connect(function(message)
     end
     
     if message:sub(1,4) == _G.prefix.."tpa" then
-        notify("TPA [TP]","TPA Success",5)
+        notify("TPA","TPA Success",5)
     local args = message:split(" ")
     
     for _,v in pairs(game.Players:GetPlayers()) do
