@@ -30,7 +30,7 @@ game.Players.LocalPlayer.Chatted:connect(function(cmd)
 end)
 
 --Prefix
-_G.prefix = "/"--change 4 new prefix
+_G.prefix = "/"
 --Prefix Noti
 local notifsEnabled = true
 local player = game:GetService("Players").LocalPlayer
@@ -49,7 +49,7 @@ if notifsEnabled then
 end
 
 --Credit
-notify("Credit","qs#0666 | xml4#4444",5)
+notify("Credit","qui#1400 | xml4#4444",5)
 
 --CMD START
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
