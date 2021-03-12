@@ -72,7 +72,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 end
 
 if notifsEnabled then
-    notify("[QUI Admin User]",player.Name,5)
+    notify("[QUI Admin UserTEST]",player.Name,5)
     notify("Default Prefix:",_G.prefix.."",5)
 end
 
