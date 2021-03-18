@@ -51,7 +51,7 @@ if notifsEnabled then
 end
 
 --Credit
-notify("Credit","qui#1400 | xml4#4444",5)
+notify("Credit","austn#1400 | xml4#4444",5)
 
 --CMD START
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
