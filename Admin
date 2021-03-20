@@ -1,15 +1,10 @@
---this is whylist ignore this shit
-local userkey = "https://pastebin.com/jYgemZib"
-local blacklist = "https://pastebin.com/YgjDkxew"
-local key = game:HttpGet(userkey, true)
-local banned = game:HttpGet(blacklist, true)
-plr = game.Players.LocalPlayer
---f
-if string.find(key,_G.Key) then 
- --script
---This Script is Obfuscated In Github This is the Source. DONT DELETE!
---Name
 print[[
+
+
+
+
+
+
 
 
     .o oOOOOOOOo                                            OOOo
@@ -30,7 +25,12 @@ print[[
                       `$"  `OOOO' `O"Y ' `OOOO'  o             .
     .                  .     OP"          : o     .
                               :
-                              .                                          ]]
+                              .                                         
+                              
+                              
+                              
+                              
+                              ]]
 
 --Commands | to make the exitbutton work: ExitButton.MouseButton1Down:connect(function() quiCommands.Visible = false end)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
@@ -394,7 +394,8 @@ plr.Chatted:connect(function(message)
     end
     end)
 
-    --also apart of whitelist put new commands above this^^^^^^^^
-else
-    plr:Kick("Incorrect Key, Rejoin To Re-Try")
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match(_G.prefix.."cmdbar") then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/commandbar"), true))()
 end
+end)
