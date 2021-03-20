@@ -87,6 +87,8 @@ spawn(function()
 	lib.messageOut("CommandBar", "Loaded")
 wait(0.5)
 lib.messageOut("Re-Written", "austn#1400 and xml4#4444")
+wait(0.5)
+lib.messageOut("Prefix To Open", ";")
 end)
 
 lib.lock = function(instance, par)
