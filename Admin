@@ -1,3 +1,12 @@
+--this is whylist ignore this shit
+local userkey = "https://pastebin.com/jYgemZib"
+local blacklist = "https://pastebin.com/YgjDkxew"
+local key = game:HttpGet(userkey, true)
+local banned = game:HttpGet(blacklist, true)
+plr = game.Players.LocalPlayer
+--f
+if string.find(key,_G.Key) then 
+ --script
 --This Script is Obfuscated In Github This is the Source. DONT DELETE!
 --Name
 print[[
@@ -384,3 +393,8 @@ plr.Chatted:connect(function(message)
         end
     end
     end)
+
+    --also apart of whitelist put new commands above this^^^^^^^^
+else
+    plr:Kick("Incorrect Key, Rejoin To Re-Try")
+end
