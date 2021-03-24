@@ -4,33 +4,29 @@ print[[
 
 
 
-
-
-
-    .o oOOOOOOOo                                            OOOo
-    Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
-    OboO"""""""""""".OOo. .oOOOOOo.    OOOo.oOOOOOo.."""""""""'OO
-    OOP.oOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOP,OOOOOOOOOOOB'
-    `O'OOOO'     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO'    `OOOOo
-    .OOOO'            `OOOOOOOOOOOOOOOOOOOOOOOOOO'            `OO
-    OOOOO      QUI       '"OOOOOOOOOOOOOOOO"`      ADMIN      oOO
-   oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.
-  oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO
- OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  '"OOOOOOOOOOOOO.OOOOOOOOOOOOOO
- "OOOO"       "YOoOOOOMOIONODOO"`  .   '"OOROAOPOEOOOoOY"     "OOO"
-    Y           'OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?'         :`
-    :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .
-    .            oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo
-                 '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':
-                      `$"  `OOOO' `O"Y ' `OOOO'  o             .
-    .                  .     OP"          : o     .
-                              :
-                              .                                         
+                              __
+                              XX
+_________        ______       ~~     _______         ______      ___.    ___.
+XXXXXXXXX.     ,gXXXXXX.      XX    ,XXXXXXXs      ,gXXXXXX.     XXXi    XXX
+XXXXXXXXXX.  ,dXXXXXXXXXs     XX   iXXXXXXXXXi    iXXXXXXXXXX_   XXXb    XXX
+XXX~~~XXXXX  XXXXX~ ~~XXXX.   XX  XXXX~   XXXX   iXXXX~`'~XXXXi  XXXXs   XXX
+XXX    dXXX  XXX       XXXX   XX  XXXXXs_  '~~   XXX`      XXXX  XXXXXb !XXX
+XXX___XXXXX iXXX!       XXX   XX   XXXXXXXXXs   iXXX        XXX  XXX XXi XXX
+XXXXXXXXXX`  XXX.       XXX   XX    ~XXXXXXXXX   XXX        XXX  XXX'XXX XXX
+XXXXXXXXX`   XXX       XXXX   XX  ____ '~XXXXXb  XXX       XXXX  XXX !XXbXXX
+XXX          XXXb     gXXX!   XX  XXXX      XXX  XXXb     gXXX   XXX  'XXXXX
+XXX          XXXXXXXXXXXXf    XX  ~XXXXX_gXXXX!  'XXXXXXXXXXXX`  XXX   !XXXX
+XXX           ~XXXXXXXXX`     XX    XXXXXXXXX~    'XXXXXXXXX`    XXX    XXXX
+~~~              ~~X~~`      '~~`     XXXXX~         ~~X~~`      ~~~    '~~~`
+                   ~                  ~~~~~            ~
+                                        
                               
                               
                               
                               
                               ]]
+                          
+print("Poison Version: Beta 1.0")
 
 --Commands | to make the exitbutton work: ExitButton.MouseButton1Down:connect(function() quiCommands.Visible = false end)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
@@ -55,7 +51,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 end
 
 if notifsEnabled then
-    notify("[Whitelist]",player.Name,5)
+    notify("[Private User]",player.Name,5)
     notify("Default Prefix:",_G.prefix.."",5)
 end
 
@@ -70,27 +66,24 @@ if cmd:sub(1,7) == "prefix " then
 end
 if cmd:match(_G.prefix.."suitcase") then
     notify("Suitcase","Gave Suitcase GripPos",5)
-local tool = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+local Player = game:GetService("Players").LocalPlayer
+local Character = Player.Character or Player.CharacterAdded:Wait(.1)
+
+repeat wait()
+    Character:FindFirstChild("Animate"):FindFirstChild("toolnone"):FindFirstChild("ToolNoneAnim").AnimationId = "rbxassetid://2319711746"
+until Character:FindFirstChild("Animate"):FindFirstChild("toolnone"):FindFirstChild("ToolNoneAnim").AnimationId == "rbxassetid://2319711746"
+wait()
+local tool = game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool")
     if tool then
             tool.GripForward = Vector3.new(-0, -1, -0)
             tool.GripPos = Vector3.new(0, 0.65, 0.01)
             tool.GripRight = Vector3.new(0, -0, 1)
             tool.GripUp = Vector3.new(1, -0, -0)
-                wait()
-                for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-     if v:IsA'Tool' then
-          v.Parent = game.Players.LocalPlayer.Backpack;
-wait()
-for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        v.Parent = game.Players.LocalPlayer.Character
+end
         wait()
-        for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
-        v:Stop()
-    end
-end
-end
-end
-end
+        for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        v.Parent = game.Players.LocalPlayer.Character
+        end
 end
 end)
 
