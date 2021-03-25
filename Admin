@@ -32,7 +32,7 @@ print("Poison Version: Beta 1.0")
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
     if cmd:match(_G.prefix.."cmds") then
 -- Goto the github QuiCommandsGui to update the gui | Also make parent quiAdminCommands.Parent = game.CoreGui
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/QuiCommandsGui"), true))() 
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/PoisonCommandsGui"), true))() 
     end
 end)
 
