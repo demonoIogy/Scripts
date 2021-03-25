@@ -51,7 +51,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 end
 
 if notifsEnabled then
-    notify("[Private User]",player.Name,5)
+    notify("POISON",player.Name,5)
     notify("Default Prefix:",_G.prefix.."",5)
 end
 
