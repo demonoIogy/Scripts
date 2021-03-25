@@ -25,7 +25,7 @@ XXX           ~XXXXXXXXX`     XX    XXXXXXXXX~    'XXXXXXXXX`    XXX    XXXX
                               
                               
                               ]]
-                          
+wait(0.5)
 print("Poison Version: Beta 1.0")
 
 --Commands | to make the exitbutton work: ExitButton.MouseButton1Down:connect(function() quiCommands.Visible = false end)
