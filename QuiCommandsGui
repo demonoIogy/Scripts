@@ -3,8 +3,8 @@
 
 -- Instances:
 
-local quiAdminCommands = Instance.new("ScreenGui")
-local quiCommands = Instance.new("Frame")
+local PoisonGui = Instance.new("ScreenGui")
+local poisonCommands = Instance.new("Frame")
 local ContainmentFrame = Instance.new("Frame")
 local CommandList = Instance.new("ScrollingFrame")
 local suitcase = Instance.new("TextLabel")
@@ -25,28 +25,43 @@ local muteplr = Instance.new("TextLabel")
 local bp = Instance.new("TextLabel")
 local re = Instance.new("TextLabel")
 local gtools = Instance.new("TextLabel")
+local changelog = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local ExitButton = Instance.new("TextButton")
 local UiCornerIGNORE = Instance.new("UICorner")
+local Changelog = Instance.new("Frame")
+local UICornerIGNORE = Instance.new("UICorner")
+local changelogINNERBOX = Instance.new("Frame")
+local changelog1 = Instance.new("TextLabel")
+local changelog2 = Instance.new("TextLabel")
+local changelog3 = Instance.new("TextLabel")
+local changelog4 = Instance.new("TextLabel")
+local changelog5 = Instance.new("TextLabel")
+local changelog6 = Instance.new("TextLabel")
+local changelog7 = Instance.new("TextLabel")
+local changelog8 = Instance.new("TextLabel")
+local changelogTITLE = Instance.new("TextLabel")
+local changelogimage = Instance.new("ImageLabel")
+local CLExitButton = Instance.new("TextButton")
 
 --Properties:
 
-quiAdminCommands.Name = "quiAdminCommands"
-quiAdminCommands.Parent = game.CoreGui
-quiAdminCommands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-quiAdminCommands.ResetOnSpawn = false
+PoisonGui.Name = "PoisonGui"
+PoisonGui.Parent = game.CoreGui
+PoisonGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PoisonGui.ResetOnSpawn = false
 
-quiCommands.Name = "quiCommands"
-quiCommands.Parent = quiAdminCommands
-quiCommands.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-quiCommands.BackgroundTransparency = 0.150
-quiCommands.BorderColor3 = Color3.fromRGB(27, 42, 53)
-quiCommands.BorderSizePixel = 0
-quiCommands.Position = UDim2.new(0.0644171834, 0, 0.605418146, 0)
-quiCommands.Size = UDim2.new(0, 197, 0, 310)
+poisonCommands.Name = "poisonCommands"
+poisonCommands.Parent = PoisonGui
+poisonCommands.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+poisonCommands.BackgroundTransparency = 0.150
+poisonCommands.BorderColor3 = Color3.fromRGB(27, 42, 53)
+poisonCommands.BorderSizePixel = 0
+poisonCommands.Position = UDim2.new(0.0644171834, 0, 0.605418146, 0)
+poisonCommands.Size = UDim2.new(0, 197, 0, 310)
 
 ContainmentFrame.Name = "ContainmentFrame"
-ContainmentFrame.Parent = quiCommands
+ContainmentFrame.Parent = poisonCommands
 ContainmentFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 ContainmentFrame.BackgroundTransparency = 0.700
 ContainmentFrame.BorderSizePixel = 0
@@ -60,6 +75,7 @@ CommandList.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CommandList.BackgroundTransparency = 1.000
 CommandList.BorderSizePixel = 0
 CommandList.Size = UDim2.new(0, 176, 0, 282)
+CommandList.CanvasPosition = Vector2.new(0, 150)
 CommandList.ScrollBarThickness = 6
 
 suitcase.Name = "suitcase"
@@ -186,7 +202,7 @@ wsnum.Name = "ws [num]"
 wsnum.Parent = CommandList
 wsnum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 wsnum.BackgroundTransparency = 1.000
-wsnum.Position = UDim2.new(0.11931818, 0, 0.586879432, 0)
+wsnum.Position = UDim2.new(0.11931818, 0, 0.629432619, 0)
 wsnum.Size = UDim2.new(0, 133, 0, 14)
 wsnum.Font = Enum.Font.SourceSans
 wsnum.Text = "ws [num] [BUGGED]"
@@ -194,14 +210,14 @@ wsnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 wsnum.TextSize = 18.000
 wsnum.TextWrapped = true
 
-jpnum.Name = "cmdbar"
+jpnum.Name = "jp  [num]"
 jpnum.Parent = CommandList
 jpnum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 jpnum.BackgroundTransparency = 1.000
-jpnum.Position = UDim2.new(0.11931818, 0, 0.622340441, 0)
+jpnum.Position = UDim2.new(0.125, 0, 0.664893627, 0)
 jpnum.Size = UDim2.new(0, 133, 0, 14)
 jpnum.Font = Enum.Font.SourceSans
-jpnum.Text = "cmdbar"
+jpnum.Text = "jp [num] [BUGGED]"
 jpnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 jpnum.TextSize = 18.000
 jpnum.TextWrapped = true
@@ -278,8 +294,20 @@ gtools.TextColor3 = Color3.fromRGB(88, 88, 88)
 gtools.TextSize = 18.000
 gtools.TextWrapped = true
 
+changelog.Name = "changelog"
+changelog.Parent = CommandList
+changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog.BackgroundTransparency = 1.000
+changelog.Position = UDim2.new(0.11931818, 0, 0.59219867, 0)
+changelog.Size = UDim2.new(0, 133, 0, 14)
+changelog.Font = Enum.Font.SourceSans
+changelog.Text = "changelog"
+changelog.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog.TextSize = 18.000
+changelog.TextWrapped = true
+
 Title.Name = "Title"
-Title.Parent = quiCommands
+Title.Parent = poisonCommands
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.274111688, 0, 0, 0)
@@ -290,7 +318,7 @@ Title.TextColor3 = Color3.fromRGB(88, 88, 88)
 Title.TextSize = 14.000
 
 ExitButton.Name = "ExitButton"
-ExitButton.Parent = quiCommands
+ExitButton.Parent = poisonCommands
 ExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ExitButton.BackgroundTransparency = 1.000
 ExitButton.Position = UDim2.new(0.898477197, 0, 0, 0)
@@ -301,16 +329,182 @@ ExitButton.TextColor3 = Color3.fromRGB(88, 88, 88)
 ExitButton.TextSize = 14.000
 
 ExitButton.MouseButton1Down:connect(function() 
-	quiCommands.Visible = false 
+	poisonCommands.Visible = false 
 end)
 
 UiCornerIGNORE.Name = "UiCornerIGNORE"
-UiCornerIGNORE.Parent = quiCommands
+UiCornerIGNORE.Parent = poisonCommands
+
+Changelog.Name = "Changelog"
+Changelog.Parent = PoisonGui
+Changelog.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Changelog.BackgroundTransparency = 0.150
+Changelog.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0.00745034218, 0, 0.719670236, 0)
+Changelog.Size = UDim2.new(0, 431, 0, 221)
+
+UICornerIGNORE.Name = "UICornerIGNORE"
+UICornerIGNORE.Parent = Changelog
+
+changelogINNERBOX.Name = "changelogINNERBOX"
+changelogINNERBOX.Parent = Changelog
+changelogINNERBOX.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+changelogINNERBOX.BackgroundTransparency = 0.700
+changelogINNERBOX.BorderColor3 = Color3.fromRGB(30, 30, 30)
+changelogINNERBOX.BorderSizePixel = 0
+changelogINNERBOX.Position = UDim2.new(0.019473806, 0, 0.116479859, 0)
+changelogINNERBOX.Size = UDim2.new(0, 414, 0, 185)
+
+changelog1.Name = "changelog1"
+changelog1.Parent = changelogINNERBOX
+changelog1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog1.BackgroundTransparency = 1.000
+changelog1.Size = UDim2.new(0, 414, 0, 23)
+changelog1.Font = Enum.Font.SourceSans
+changelog1.Text = "- Added Changelog"
+changelog1.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog1.TextSize = 18.000
+changelog1.TextWrapped = true
+changelog1.TextXAlignment = Enum.TextXAlignment.Left
+changelog1.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog2.Name = "changelog2"
+changelog2.Parent = changelogINNERBOX
+changelog2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog2.BackgroundTransparency = 1.000
+changelog2.Position = UDim2.new(0, 0, 0.124324322, 0)
+changelog2.Size = UDim2.new(0, 414, 0, 23)
+changelog2.Font = Enum.Font.SourceSans
+changelog2.Text = "- Added Changelog"
+changelog2.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog2.TextSize = 18.000
+changelog2.TextWrapped = true
+changelog2.TextXAlignment = Enum.TextXAlignment.Left
+changelog2.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog3.Name = "changelog3"
+changelog3.Parent = changelogINNERBOX
+changelog3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog3.BackgroundTransparency = 1.000
+changelog3.Position = UDim2.new(0, 0, 0.248648643, 0)
+changelog3.Size = UDim2.new(0, 414, 0, 23)
+changelog3.Font = Enum.Font.SourceSans
+changelog3.Text = "- Added Changelog"
+changelog3.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog3.TextSize = 18.000
+changelog3.TextWrapped = true
+changelog3.TextXAlignment = Enum.TextXAlignment.Left
+changelog3.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog4.Name = "changelog4"
+changelog4.Parent = changelogINNERBOX
+changelog4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog4.BackgroundTransparency = 1.000
+changelog4.Position = UDim2.new(0, 0, 0.372972965, 0)
+changelog4.Size = UDim2.new(0, 414, 0, 23)
+changelog4.Font = Enum.Font.SourceSans
+changelog4.Text = "- Added Changelog"
+changelog4.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog4.TextSize = 18.000
+changelog4.TextWrapped = true
+changelog4.TextXAlignment = Enum.TextXAlignment.Left
+changelog4.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog5.Name = "changelog5"
+changelog5.Parent = changelogINNERBOX
+changelog5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog5.BackgroundTransparency = 1.000
+changelog5.Position = UDim2.new(0, 0, 0.497297287, 0)
+changelog5.Size = UDim2.new(0, 414, 0, 23)
+changelog5.Font = Enum.Font.SourceSans
+changelog5.Text = "- Added Changelog"
+changelog5.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog5.TextSize = 18.000
+changelog5.TextWrapped = true
+changelog5.TextXAlignment = Enum.TextXAlignment.Left
+changelog5.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog6.Name = "changelog6"
+changelog6.Parent = changelogINNERBOX
+changelog6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog6.BackgroundTransparency = 1.000
+changelog6.Position = UDim2.new(0, 0, 0.621621609, 0)
+changelog6.Size = UDim2.new(0, 414, 0, 23)
+changelog6.Font = Enum.Font.SourceSans
+changelog6.Text = "- Added Changelog"
+changelog6.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog6.TextSize = 18.000
+changelog6.TextWrapped = true
+changelog6.TextXAlignment = Enum.TextXAlignment.Left
+changelog6.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog7.Name = "changelog7"
+changelog7.Parent = changelogINNERBOX
+changelog7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog7.BackgroundTransparency = 1.000
+changelog7.Position = UDim2.new(0, 0, 0.74594593, 0)
+changelog7.Size = UDim2.new(0, 414, 0, 23)
+changelog7.Font = Enum.Font.SourceSans
+changelog7.Text = "- Added Changelog"
+changelog7.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog7.TextSize = 18.000
+changelog7.TextWrapped = true
+changelog7.TextXAlignment = Enum.TextXAlignment.Left
+changelog7.TextYAlignment = Enum.TextYAlignment.Top
+
+changelog8.Name = "changelog8"
+changelog8.Parent = changelogINNERBOX
+changelog8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelog8.BackgroundTransparency = 1.000
+changelog8.Position = UDim2.new(0, 0, 0.870270252, 0)
+changelog8.Size = UDim2.new(0, 414, 0, 23)
+changelog8.Font = Enum.Font.SourceSans
+changelog8.Text = "- Added Changelog"
+changelog8.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelog8.TextSize = 18.000
+changelog8.TextWrapped = true
+changelog8.TextXAlignment = Enum.TextXAlignment.Left
+changelog8.TextYAlignment = Enum.TextYAlignment.Top
+
+changelogTITLE.Name = "changelogTITLE"
+changelogTITLE.Parent = Changelog
+changelogTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelogTITLE.BackgroundTransparency = 1.000
+changelogTITLE.Position = UDim2.new(0.22737819, 0, 0, 0)
+changelogTITLE.Size = UDim2.new(0, 235, 0, 25)
+changelogTITLE.Font = Enum.Font.GothamBlack
+changelogTITLE.Text = "Changelog"
+changelogTITLE.TextColor3 = Color3.fromRGB(88, 88, 88)
+changelogTITLE.TextSize = 14.000
+
+changelogimage.Name = "changelogimage"
+changelogimage.Parent = changelogTITLE
+changelogimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changelogimage.BackgroundTransparency = 1.000
+changelogimage.Position = UDim2.new(0.23829788, 0, 0.239999846, 0)
+changelogimage.Size = UDim2.new(0, 19, 0, 13)
+changelogimage.Image = "http://www.roblox.com/asset/?id=6271370878"
+
+CLExitButton.Name = "CLExitButton"
+CLExitButton.Parent = Changelog
+CLExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CLExitButton.BackgroundTransparency = 1.000
+CLExitButton.Position = UDim2.new(0.953596294, 0, 0.0135746608, 0)
+CLExitButton.Size = UDim2.new(0, 20, 0, 19)
+CLExitButton.Font = Enum.Font.GothamBlack
+CLExitButton.Text = "x"
+CLExitButton.TextColor3 = Color3.fromRGB(88, 88, 88)
+CLExitButton.TextSize = 14.000
+
+CLExitButton.MouseButton1Down:connect(function() 
+	Changelog.Visible = false 
+end)
 
 -- Scripts:
 
-local function BOHKDMA_fake_script() -- quiCommands.DraggableScript 
-	local script = Instance.new('LocalScript', quiCommands)
+local function JAKGVIM_fake_script() -- poisonCommands.DraggableScript 
+	local script = Instance.new('LocalScript', poisonCommands)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -346,4 +540,42 @@ local function BOHKDMA_fake_script() -- quiCommands.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(BOHKDMA_fake_script)()
+coroutine.wrap(JAKGVIM_fake_script)()
+local function ZATX_fake_script() -- Changelog.DraggableScript2 
+	local script = Instance.new('LocalScript', Changelog)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local starPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(starPos.X.Scale, starPos.X.Offset + delta.X, starPos.Y.Scale, starPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			starPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZATX_fake_script)()
