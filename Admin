@@ -390,9 +390,3 @@ plr.Chatted:connect(function(message)
         end
     end
     end)
-
-game.Players.LocalPlayer.Chatted:connect(function(cmd)
-if cmd:match(_G.prefix.."cmdbar") then
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/quistone/Scripts/main/commandbar"), true))()
-end
-end)
