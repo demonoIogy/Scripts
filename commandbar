@@ -1,7 +1,7 @@
 -- this is old code broother
 
 local opt = {
-	prefix = ';',			-- ;ff me | /ff me
+	prefix = '/',			-- ;ff me | /ff me
 	tupleSeparator = ',',	-- ;ff me,others,all | ;ff me/others/all
 	ui = {					-- never did anything with this
 		
