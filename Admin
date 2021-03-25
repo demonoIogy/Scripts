@@ -358,7 +358,7 @@ plr.Chatted:connect(function(message)
         end
     end
     
-    if message:sub(1,3) == _G.prefix.."reset" then
+    if message:sub(1,3) == _G.prefix.."re" then
         charr:BreakJoints()
     end
     
