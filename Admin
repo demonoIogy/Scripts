@@ -358,7 +358,7 @@ plr.Chatted:connect(function(message)
     end
     
     if message:sub(1,7) == _G.prefix.."gtools" then
-        notify("GTools","Got All Tools",5)
+        notify("GTools","Loop Grabbing All Tools",5)
         getgenv().loopgtools = true;
         
         while wait() do
@@ -375,7 +375,7 @@ end)
 
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match(_G.prefix.."ungtools") then
-    
+    notify("GTools","Stopped Loop Grabbing Tools",5)
     getgenv().loopgtools = false;
     
 end
