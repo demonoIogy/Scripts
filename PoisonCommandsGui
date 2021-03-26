@@ -183,7 +183,7 @@ gotoplr.TextColor3 = Color3.fromRGB(88, 88, 88)
 gotoplr.TextSize = 18.000
 gotoplr.TextWrapped = true
 
-wsnum.Name = "ws [num]"
+wsnum.Name = "getpos"
 wsnum.Parent = CommandList
 wsnum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 wsnum.BackgroundTransparency = 1.000
@@ -195,14 +195,14 @@ wsnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 wsnum.TextSize = 18.000
 wsnum.TextWrapped = true
 
-jpnum.Name = "jp  [num]"
+jpnum.Name = "gettoolname"
 jpnum.Parent = CommandList
 jpnum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 jpnum.BackgroundTransparency = 1.000
 jpnum.Position = UDim2.new(0.125, 0, 0.664893627, 0)
 jpnum.Size = UDim2.new(0, 133, 0, 14)
 jpnum.Font = Enum.Font.SourceSans
-jpnum.Text = "gettoolnames"
+jpnum.Text = "gettoolname"
 jpnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 jpnum.TextSize = 18.000
 jpnum.TextWrapped = true
