@@ -33,7 +33,7 @@ local UiCornerIGNORE = Instance.new("UICorner")
 --Properties:
 
 PoisonCommands.Name = "PoisonCommands"
-PoisonCommands.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PoisonCommands.Parent = game.CoreGui
 PoisonCommands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 PoisonCommands.ResetOnSpawn = false
 
@@ -61,7 +61,6 @@ CommandList.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CommandList.BackgroundTransparency = 1.000
 CommandList.BorderSizePixel = 0
 CommandList.Size = UDim2.new(0, 176, 0, 282)
-CommandList.CanvasPosition = Vector2.new(0, 150)
 CommandList.ScrollBarThickness = 6
 
 suitcase.Name = "suitcase"
@@ -143,7 +142,7 @@ rejoin.BackgroundTransparency = 1.000
 rejoin.Position = UDim2.new(0.11931818, 0, 0.228723422, 0)
 rejoin.Size = UDim2.new(0, 133, 0, 14)
 rejoin.Font = Enum.Font.SourceSans
-rejoin.Text = "rejoin"
+rejoin.Text = "rj"
 rejoin.TextColor3 = Color3.fromRGB(88, 88, 88)
 rejoin.TextSize = 18.000
 rejoin.TextWrapped = true
@@ -191,7 +190,7 @@ wsnum.BackgroundTransparency = 1.000
 wsnum.Position = UDim2.new(0.11931818, 0, 0.629432619, 0)
 wsnum.Size = UDim2.new(0, 133, 0, 14)
 wsnum.Font = Enum.Font.SourceSans
-wsnum.Text = "ws [num] [BUGGED]"
+wsnum.Text = "getpos"
 wsnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 wsnum.TextSize = 18.000
 wsnum.TextWrapped = true
@@ -203,7 +202,7 @@ jpnum.BackgroundTransparency = 1.000
 jpnum.Position = UDim2.new(0.125, 0, 0.664893627, 0)
 jpnum.Size = UDim2.new(0, 133, 0, 14)
 jpnum.Font = Enum.Font.SourceSans
-jpnum.Text = "jp [num] [BUGGED]"
+jpnum.Text = "gettoolnames"
 jpnum.TextColor3 = Color3.fromRGB(88, 88, 88)
 jpnum.TextSize = 18.000
 jpnum.TextWrapped = true
@@ -323,7 +322,7 @@ UiCornerIGNORE.Parent = poisonCommands
 
 -- Scripts:
 
-local function ETJMBIL_fake_script() -- poisonCommands.DraggableScript 
+local function TPIINZS_fake_script() -- poisonCommands.DraggableScript 
 	local script = Instance.new('LocalScript', poisonCommands)
 
 	local UIS = game:GetService('UserInputService')
@@ -360,4 +359,4 @@ local function ETJMBIL_fake_script() -- poisonCommands.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(ETJMBIL_fake_script)()
+coroutine.wrap(TPIINZS_fake_script)()
