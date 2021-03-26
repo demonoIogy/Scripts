@@ -359,12 +359,26 @@ plr.Chatted:connect(function(message)
     
     if message:sub(1,7) == _G.prefix.."gtools" then
         notify("GTools","Got All Tools",5)
+        getgenv().loopgtools = true;
+        
+        while wait() do
+        if getgenv().loopgtools == true then
         for _,v in pairs(game.workspace:GetChildren()) do
             if v:IsA("Tool") then
                 v.Handle.CFrame = plr.Character.Head.CFrame
             end
         end
     end
+end
+end
+end)
+
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match(_G.prefix.."ungtools") then
+    
+    getgenv().loopgtools = false;
+    
+end
 end)
 
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
