@@ -41,7 +41,7 @@ game.Players.LocalPlayer.Chatted:connect(function(cmd)
 end)
 
 --Prefix
-_G.prefix = "!"
+_G.prefix = "-"
 --Prefix Noti
 local notifsEnabled = true
 local player = game:GetService("Players").LocalPlayer
