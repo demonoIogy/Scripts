@@ -26,7 +26,7 @@ XXX           ~XXXXXXXXX`     XX    XXXXXXXXX~    'XXXXXXXXX`    XXX    XXXX
                               
                               ]]
 wait(0.5)
-print("Poison Version: Beta 2.0")
+print("Poison Version: Beta 2.1")
 -- For Below, change every parent to game.CoreGui
 game.Players.LocalPlayer.Chatted:connect(function(cmd) 
     if cmd:match(_G.prefix.."cmds") then
