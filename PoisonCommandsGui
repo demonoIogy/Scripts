@@ -27,6 +27,7 @@ local re = Instance.new("TextLabel")
 local gtools = Instance.new("TextLabel")
 local changelog = Instance.new("TextLabel")
 local ungtools = Instance.new("TextLabel")
+local gun = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
 local ExitButton = Instance.new("TextButton")
 local UiCornerIGNORE = Instance.new("UICorner")
@@ -62,7 +63,6 @@ CommandList.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CommandList.BackgroundTransparency = 1.000
 CommandList.BorderSizePixel = 0
 CommandList.Size = UDim2.new(0, 176, 0, 282)
-CommandList.CanvasPosition = Vector2.new(0, 282)
 CommandList.ScrollBarThickness = 6
 
 suitcase.Name = "suitcase"
@@ -144,7 +144,7 @@ rejoin.BackgroundTransparency = 1.000
 rejoin.Position = UDim2.new(0.11931818, 0, 0.228723422, 0)
 rejoin.Size = UDim2.new(0, 133, 0, 14)
 rejoin.Font = Enum.Font.SourceSans
-rejoin.Text = "rejoin"
+rejoin.Text = "rj"
 rejoin.TextColor3 = Color3.fromRGB(88, 88, 88)
 rejoin.TextSize = 18.000
 rejoin.TextWrapped = true
@@ -305,6 +305,18 @@ ungtools.TextColor3 = Color3.fromRGB(88, 88, 88)
 ungtools.TextSize = 18.000
 ungtools.TextWrapped = true
 
+gun.Name = "gun"
+gun.Parent = CommandList
+gun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gun.BackgroundTransparency = 1.000
+gun.Position = UDim2.new(0.11931818, 0, 0.728723407, 0)
+gun.Size = UDim2.new(0, 133, 0, 14)
+gun.Font = Enum.Font.SourceSans
+gun.Text = "gun"
+gun.TextColor3 = Color3.fromRGB(88, 88, 88)
+gun.TextSize = 18.000
+gun.TextWrapped = true
+
 Title.Name = "Title"
 Title.Parent = poisonCommands
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -336,7 +348,7 @@ UiCornerIGNORE.Parent = poisonCommands
 
 -- Scripts:
 
-local function MCJCQ_fake_script() -- poisonCommands.DraggableScript 
+local function PATAPDD_fake_script() -- poisonCommands.DraggableScript 
 	local script = Instance.new('LocalScript', poisonCommands)
 
 	local UIS = game:GetService('UserInputService')
@@ -373,4 +385,4 @@ local function MCJCQ_fake_script() -- poisonCommands.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(MCJCQ_fake_script)()
+coroutine.wrap(PATAPDD_fake_script)()
