@@ -54,7 +54,7 @@ end
 
 if notifsEnabled then
     notify("POISON",player.Name,5)
-    notify("Default Prefix:",_G.prefix.."",5)
+    notify("Default Prefix",_G.prefix.."",5)
 end
 
 --Credit
