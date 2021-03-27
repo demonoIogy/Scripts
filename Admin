@@ -412,3 +412,23 @@ end
 notify("Printed","Check Console",5)
 end
 end)
+
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match(_G.prefix.."gun") then
+notify("Gun","Gave Gun GripPos",5)
+local v = -0.2
+local vm = -2.5
+for _,z in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if z:IsA'Tool' then do
+        v = v - 0.5
+        vm = vm * 0.5
+        z.Parent = game.Players.LocalPlayer.Character
+        z.Grip = CFrame.new(v,vm,0)
+        z.GripUp = Vector3.new(1,-1,0)
+        z.GripRight = Vector3.new(1,0,1)
+        z.GripForward = Vector3.new(0,0,0)
+    end
+    end
+end
+end
+end)
