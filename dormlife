@@ -1,3 +1,5 @@
+notify("User",player.Name,5)
+notify("Credit",austn#1400 | xml4#4444,5)
 game.Players.LocalPlayer.Chatted:connect(function(cmd)
 if cmd:match("<iceh") then
 game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "74891470", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
