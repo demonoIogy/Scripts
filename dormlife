@@ -1,0 +1,515 @@
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<iceh") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "74891470", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<sd") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1609401184", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bm") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "128992838"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bbm") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "209995252"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<cs") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "11748356", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<chp") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1235488", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<valk") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1365767", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bvalk") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "124730194", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<ws") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "187848395", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<whp") then
+ game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "172309919", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<dc") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1031429", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<domemp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "21070012", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<domastra") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "162067148", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<dommess") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "64444871", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<tmesh") then
+  for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
+	if v.ClassName == "Tool" then
+	    for i,v in pairs(v.Handle:GetChildren()) do 
+	if v.ClassName == "SpecialMesh" then
+	v:Destroy()
+	end
+	    end
+end
+end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<reds") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "72082328", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<purples") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "63043890", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<drophats") then
+  for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if (v:IsA("Accessory")) then
+v.Parent = workspace
+end
+end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<gs") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "100929604", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<ps") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "334663683", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<sbs") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "493476042", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<gun") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "4933294084", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<crash") then
+  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("cya skid","All")
+wait(1.0)
+for i=1, 10000 do
+game.ReplicatedStorage.GetItem:FireServer("Ropod")
+end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<sparkle") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1285307", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<wspark") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1016143686", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<fireh") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "215718515", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<cf") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1029025", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<rvalk") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "2274774123", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<vstar") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1125510", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<hmesh") then
+  for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
+	if v.ClassName =="Accessory" then
+	    for i,v in pairs(v.Handle:GetChildren()) do 
+	if v.ClassName == "SpecialMesh" then
+	v:Destroy()
+	end
+	    end
+end
+end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<blfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "88885069", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "293316452", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match(",<fed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "128158708", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<greenfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "146134358", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<tfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "439984665", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "188003914", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bfed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1180419124", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bluefed") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "878889105", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<viovalk") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1402432199", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<sparkv") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1180433861", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<ivalk") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "4390891467", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<evalk") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "2830437685", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<istpm") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "416828455", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<bhair") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "16630147", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<capwn") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "24123795", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<brownhair") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "323476364", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<headless") then
+game.ReplicatedStorage.RPName:FireServer("a")
+wait(0.4)
+game.Players.LocalPlayer.Character.Head.face:Remove()
+game.Players.LocalPlayer.Character.a:Remove()
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<yum") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "26019070"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<realsp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "173624561", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<purpsp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "173624697", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<goldsp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "173624651", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<poih") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1744060292", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<doom") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "132809431", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<annoying") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "33070696", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<annoying") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "24112667", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:Connect(function(message)
+if message == "<rhats" then
+for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetAccessories()) do
+v:Remove()
+end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<prankster") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "20052135"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<tango") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "16652251"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<trouble") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "22920501"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<tattle") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "26343188"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<rbm") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "none", [3]= "none", [4]= "none", [5]= "none", [6]= "2225761296"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<phair") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "20980138", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<voidwrath") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "562478132", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<annoying") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "305888394", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<flames") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "3756389957", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<sword") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "4790788200", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pwnage") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "233705354", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<swrd2") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "2470750640", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pumpkinsp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "311450131", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<banner") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "4739738574", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<wings") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "192557913", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pkvic") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "435115571", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<pkult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "315549204", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<aquault") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "323417812", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<orangeult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "1191152570", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<fireult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "286524947", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<purpult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "878908562", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<darkpurpult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "188004500", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<roseult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "228449574", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<tealult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "188888052", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<greenult") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "553858732", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<ihorns") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "628771505", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<heads") then
+   blocks = 60
+
+actualblock = false
+
+hatid = "3810504815"
+
+
+
+
+for i=0,blocks do
+	spawn(function()
+local tbl_0xf8d842abb78346ac = 
+{
+      hatid, 
+      "", 
+      "", 
+      "", 
+      "", 
+      ""
+}
+local tbl_main = 
+{
+      tbl_0xf8d842abb78346ac
+}
+game:GetService("ReplicatedStorage").Clothes:FireServer(unpack(tbl_main))
+
+
+wait(1)
+
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do 
+	if v.ClassName =="Accessory" then 
+
+
+if actualblock then
+for i,v in pairs(v.Handle:GetChildren()) do 
+	if v.ClassName == "SpecialMesh" then
+	v:Destroy()
+	end
+	end
+end
+
+v.Parent = game.Workspace
+
+	end
+	end
+	end)
+	end
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<jacko") then
+game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "64560336", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<domp") then
+  game.ReplicatedStorage.Clothes:FireServer({[1]= "none", [2]= "527365852", [3]= "none", [4]= "none", [5]= "none", [6]= "none"})
+end
+end)
+game.Players.LocalPlayer.Chatted:connect(function(cmd)
+if cmd:match("<xml4") then
+  while wait()
+do
+game.ReplicatedStorage.RPName:FireServer("x")
+wait(0.2)
+game.ReplicatedStorage.RPName:FireServer("xm")
+wait(0.2)
+game.ReplicatedStorage.RPName:FireServer("xml")
+wait(0.2)
+game.ReplicatedStorage.RPName:FireServer("xml4")
+wait(0.2)
+end
+end
+end)
