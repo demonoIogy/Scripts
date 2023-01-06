@@ -32,8 +32,8 @@ local UI = New("ScreenGui", {
 
 local NotificationHolder = New("Frame", {
 	Parent = UI, BackgroundTransparency = 1, Position = UDim2.new(0.924, 0, 0.5, 0), Size = UDim2.new(0.151, 0, 1, 0)
-}); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 10), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
-New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 15), PaddingTop = UDim.new(0, 15)});
+}); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 15), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
+New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 20), PaddingTop = UDim.new(0, 20)});
 
 local Nord = {};
 
