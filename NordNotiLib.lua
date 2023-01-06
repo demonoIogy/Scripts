@@ -1,6 +1,5 @@
 -- uploaded this here to fork
 -- also uplodaded this here for a more trustable domain for the loadstring
-
 local GuiService = game:GetService("GuiService")
 -- << Services >> --
 local TweenService, Core do
@@ -32,9 +31,9 @@ local UI = New("ScreenGui", {
 }); protectGui(UI); UI["Parent"] = Core;
 
 local NotificationHolder = New("Frame", {
-	Parent = UI, BackgroundTransparency = 1, Position = UDim2.new(0.924, 0, 0.5, 0), Size = UDim2.new(2, 0, 2, 0)
-}); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 20), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
-New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 5), PaddingTop = UDim.new(0, 5)});
+	Parent = UI, BackgroundTransparency = 1, Position = UDim2.new(0.924, 0, 0.5, 0), Size = UDim2.new(0.151, 0, 1, 0)
+}); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 15), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
+New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 20), PaddingTop = UDim.new(0, 20)});
 
 local Nord = {};
 
@@ -51,7 +50,7 @@ Nord["Themes"] = {
     },
     ["dark"] = {
         ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
+            ["BackgroundColor3"] = Color3.fromRGB(70, 70, 73);
         },
         ["TextLabel"] = {
             ["TextColor3"] = Color3.new(1, 1, 1)
@@ -107,7 +106,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 		ImageColor3 = Type2Color[Type:lower()], ImageTransparency = 1, ScaleType = "Slice", SliceCenter = Rect.new(95, 95, 205, 205)
 	}); New("UICorner", {Parent = Frame, CornerRadius = UDim.new(0, 5)}); New("UICorner", {Parent = DropShadow, CornerRadius = UDim.new(0, 5)});
 	local Header = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.237, 0, 0.172, 0), Size = UDim2.new(0.4, 0, 0.358, 0), ZIndex = 2, Font = "GothamMedium",
-		Text = Title or "Missing Title", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+		Text = Title or "Nord", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Header);
 	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "Gotham",
 		Text = Message, TextSize = 12, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
