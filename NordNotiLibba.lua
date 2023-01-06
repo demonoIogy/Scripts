@@ -33,7 +33,7 @@ local UI = New("ScreenGui", {
 local NotificationHolder = New("Frame", {
 	Parent = UI, BackgroundTransparency = 1, Position = UDim2.new(0.924, 0, 0.5, 0), Size = UDim2.new(0.151, 0, 1, 0)
 }); New("UIListLayout", {Parent = NotificationHolder, Padding = UDim.new(0, 15), HorizontalAlignment = "Center", VerticalAlignment = "Bottom"});
-New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 20), PaddingTop = UDim.new(0, 20)});
+New("UIPadding", {Parent = NotificationHolder, PaddingBottom = UDim.new(0, 10), PaddingTop = UDim.new(0, 20)});
 
 local Nord = {};
 
@@ -109,7 +109,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 		Text = Title or "Nord", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Header);
 	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "Gotham",
-		Text = Message, TextSize = 15, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+		Text = Message, TextSize = 13, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Msg);
 	local LineHolder = New("Frame", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.93, 0), Size = UDim2.new(0.9278, 0, 0, 1), ZIndex = 2})
 	New("UIListLayout", {Parent = LineHolder, HorizontalAlignment = "Left", VerticalAlignment = "Center"});
