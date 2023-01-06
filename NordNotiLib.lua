@@ -50,7 +50,7 @@ Nord["Themes"] = {
     },
     ["dark"] = {
         ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(70, 70, 73);
+            ["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
         },
         ["TextLabel"] = {
             ["TextColor3"] = Color3.new(1, 1, 1)
