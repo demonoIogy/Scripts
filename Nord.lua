@@ -105,11 +105,11 @@ function Nord:Notify(Title, Message, Type, Duration)
 	}); local DropShadow = New("ImageLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.512, 0), Size = UDim2.new(1.053, 0, 1.135, 0), Image = "rbxassetid://7912134082",
 		ImageColor3 = Type2Color[Type:lower()], ImageTransparency = 1, ScaleType = "Slice", SliceCenter = Rect.new(95, 95, 205, 205)
 	}); New("UICorner", {Parent = Frame, CornerRadius = UDim.new(0, 5)}); New("UICorner", {Parent = DropShadow, CornerRadius = UDim.new(0, 5)});
-	local Header = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.237, 0, 0.172, 0), Size = UDim2.new(0.4, 0, 0.358, 0), ZIndex = 2, Font = "GothamMedium",
-		Text = Title or "Nord", TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+	local Header = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.237, 0, 0.172, 0), Size = UDim2.new(0.4, 0, 0.358, 0), ZIndex = 2, Font = "GothamBold",
+		Text = Title or "Nord", TextSize = 15, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Header);
-	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "Gotham",
-		Text = Message, TextSize = 13, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "GothamMedium",
+		Text = Message, TextSize = 14, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Msg);
 	local LineHolder = New("Frame", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.93, 0), Size = UDim2.new(0.9278, 0, 0, 1), ZIndex = 2})
 	New("UIListLayout", {Parent = LineHolder, HorizontalAlignment = "Left", VerticalAlignment = "Center"});
