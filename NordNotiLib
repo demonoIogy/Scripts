@@ -1,3 +1,6 @@
+-- uploaded this here to fork
+-- also uplodaded this here for a more trustable domain for the loadstring
+
 local GuiService = game:GetService("GuiService")
 -- << Services >> --
 local TweenService, Core do
